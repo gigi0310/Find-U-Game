@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+body {
+    background-color: whitesmoke;
+}
+
+.container {
+    /* border: 1px solid blue; */
+    width: 1600px;
+    height:1000px;
+    margin: 100px auto;
+    background-image: url("/images/2.png");
+    background-repeat: cover;
+}
+
+
+/* index.erb Start */
+
+.index {
+    width: 1000px;
+    height: 400px;
+    text-align: center;
+    margin: 200px auto;
+    /* background-image: url("/images/2.jpeg");
+    background-repeat: round; */
+    /* padding-top: 50px */
+}
+
+.index_back {
+    color: palevioletred
+}
+
+.index_message {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    color: palevioletred;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.search_wrap {
+    width: 35%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.index_login {
+    margin-top: 154px;
+}
+
+.index_signup {
+    margin-top: 50px
+}
+
+.index_login,
+.index_signup {
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 11px;
+    margin-left: 393px;
+    line-height: 47px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    border: 1px solid greenyellow;
+}
+
+.index_personal {
+    margin-top: 55px;
+}
+
+.index_community {
+    margin-top: 50px
+}
+
+.index_personal,
+.index_community {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    font-size: 30px;
+    line-height: 28px;
+    border: 1px solid greenyellow;
+    margin-left: 393px;
+    margin-right: -154px;
+    color: white;
+}
+
+
+/* index.erb ends */
+
+
+/* Login Page Starts */
+
+.login_login {
+    color: palevioletred;
+    font-size: 60px;
+    width: 100px;
+    margin: 0px auto;
+    padding-top: 57px;
+    margin-bottom: 81px;
+    padding-right: 37px;
+}
+
+.login_form {
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding-top: 50px;
+}
+
+.login_label {
+    font-size: 40px;
+    margin-left: 120px;
+}
+
+.login_input {
+    margin-top: 30px;
+    margin-left: 75px;
+    width: 250px;
+    height: 38px;
+    margin-bottom: 46px
+}
+
+.login_btn {
+    margin-top: 20px;
+    margin-left: 135px;
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color: #33bdef;
+    border-radius: 6px;
+    border: 1px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 48px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+.login_btn:hover {
+    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color: #019ad2;
+}
+
+.login_btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* Login Page Ends */
+
+
+/* game_collection page starts */
+
+.gc_message,
+.gc_p {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.gc_p {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    color: palevioletred;
+   padding-top: 30px;
+}
+
+.gc_message {
+    font-size: 20px;
+    color: palevioletred;
+}
+
+
+
+tbody tr:nth-child(odd) {
+    background-color: lightskyblue;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+table {
+    width: 1000px;
+    height: fit-content;
+    background-color: #4733ff;
+    margin: 0 auto;
+}
+
+.loggout {
+    padding-top: 37px;
+    margin-left: 52px;
+}
+
+
+
+
+/* game_collection page ends */
+
+/* label {
+    color: palevioletred;
+} */

@@ -1,0 +1,31 @@
+<table>
+    <thead>
+     <tr>
+      
+      <th scope="col">Username</th>
+      <th scope="col">Title</th>
+      <th scope="col">Year</th>
+      <th scope="col">Description</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Category</th>
+     
+      
+    </tr>
+    </thead>
+
+<tbody>
+    <% games.each do |game| %>
+    <tr>
+      
+      <td><%= game["user_name"] %></td>
+      <td><%= game["title"] %></td>
+      <td><%= game["year"] %></td>
+      <td><%= game["description"] %></td>
+      <td><%= game["rating"] %></td>
+      <td><%= game["category"] %></td>
+      
+      
+    </tr>
+    <% end %>
+  </tbody>
+</table>

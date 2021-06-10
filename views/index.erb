@@ -1,0 +1,34 @@
+
+<div class="index">
+  <p class="index_back">
+  <% if logged_in? %>
+   Hi, <%= current_user()['user_name'] %> 😊
+  <% end %> 
+  </p>
+
+
+  <p class="index_message">Welcome to Game Tracker </p>
+  
+ 
+
+    <div class="search_wrap">
+      <form class="search" action="/search" method="get">
+      <input type="text" class="searchTerm" placeholder="Search for your game...">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+      </form>
+    </div>
+    
+     <div>
+    <a class="index_login" href="/login">Login</a>
+    <a class="index_signup" href="/signup">Signup</a>
+
+ 
+    <a class="index_personal" href="/session">Personal Collection</a>
+
+    <a class="index_community" href="/community">Community Collection</a>
+  </div>
+</div>
+
+

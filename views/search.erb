@@ -1,0 +1,27 @@
+<table>
+    <thead>
+     <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Year</th>
+      <th scope="col">Description</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Category</th>
+      <th scope="col">Image</th>
+    </tr>
+    </thead>
+
+<tbody>
+    <% games.each_with_index do |game, i| %>
+    <tr>
+      <th scope="row"> <% game["id"] %></th>
+      <td><%= game["name"] %></td>
+      <td><%= game["released"] %></td>
+      <td><%= game["description"] %></td>
+      <td><%= game["ratings_count"] %></td>
+      <td><%= game["genres"][0] %></td>
+      <td id="img"><a href="/session"><img src="<%= game["background_image"] %>" alt="image"></a></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

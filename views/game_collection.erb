@@ -1,0 +1,56 @@
+
+<form class="loggout" action="/session" method="post">
+    <input type="hidden" name=_method value="delete">
+    <button>logout</button>
+</form>
+<div class="gc">
+<p class="gc_p">Welcome to your game collection</p>
+<p class="gc_message">
+<% if logged_in? %>
+ Hi, <%= current_user()['user_name'] %> 👋
+<% end %> 
+</p>
+</div>
+
+<p class="gc_lk"><a href="/games/new" >Add Game +</a></p>
+
+<table>
+    <thead>
+     <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Year</th>
+      <th scope="col">Notes</th>
+      <th scope="col">Rating</th>
+      <th scope="col">Category</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+
+<tbody>
+    <% games.each_with_index do |game, i| %>
+    <tr>
+      <th scope="row"> <% game["id"] %><%= i + 1%></th>
+      <td><%= game["title"] %></td>
+      <td><%= game["year"] %></td>
+      <td><%= game["description"] %></td>
+      <td><%= game["rating"] %></td>
+      <td><%= game["category"] %></td>
+      <td><a href="/games/<%= game["id"] %>/edit">Edit</a></td> 
+      <td>
+        <form action="/games/<%= game["id"] %>" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="delete">
+        </form>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+
+
+
