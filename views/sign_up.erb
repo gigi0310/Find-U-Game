@@ -1,18 +1,21 @@
-<h1> Sign Up for Game Tracker <h1>
+<p class="signup">Sign Up</p> 
 
-<p>Keep track of your game collection the easy way.</p>
+<div class="signup_form">
 <form action="/signup" method="post">
-    <label for="user_name">Username </label>
-    <input type="text" name="user_name" id="user_name"><br>
+    <label class="signup_label" for="user_name">Username </label>
+    <input class="signup_input" type="text" name="user_name" id="user_name">
 
-    <label for="email">Email </label>
-    <input type="text" name="email" id="email"><br>
+    <label class="signup_label" for="email">Email </label>
+    <input class="signup_input" type="text" name="email" id="email">
 
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password"> <br>
+    <label class="signup_input" for="password">Password</label>
+    <input class="signup_input" type="password" name="password" id="password"> 
 
-    <br><br>
-    <input type="submit" value="Sign up">
+    <button class="signup_btn">Sign up</button>
+    
+    
 </form>
 
-<a href="/">Home</a>
+<a class="signup_home"href="/">Home</a>
+<a class="signup_login" href="/login">Login Instead</a>
+</div>

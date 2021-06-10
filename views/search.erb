@@ -1,27 +1,29 @@
-<table>
+<div class="search_d">
+<a class="search_h" href="/">Home</a>
+<a class="search_s" href="/session">Personal Collection</a>
+<a class="search_c" href="/community">Community Collection</a>
+</div>
+<table class="search_t">
     <thead>
      <tr>
-      <th scope="col">ID</th>
+      <th scope="col">Image</th>
       <th scope="col">Title</th>
       <th scope="col">Year</th>
-      <th scope="col">Description</th>
       <th scope="col">Rating</th>
-      <th scope="col">Category</th>
-      <th scope="col">Image</th>
+      
+      
     </tr>
     </thead>
 
 <tbody>
     <% games.each_with_index do |game, i| %>
     <tr>
-      <th scope="row"> <% game["id"] %></th>
+      <td id="img"><a href="/session"><img class="img" src="<%= game["background_image"] %>" alt="image"></a></td>
+   
       <td><%= game["name"] %></td>
       <td><%= game["released"] %></td>
-      <td><%= game["description"] %></td>
       <td><%= game["ratings_count"] %></td>
-      <td><%= game["genres"][0] %></td>
-      <td id="img"><a href="/session"><img src="<%= game["background_image"] %>" alt="image"></a></td>
-    </tr>
+       </tr>
     <% end %>
   </tbody>
 </table>

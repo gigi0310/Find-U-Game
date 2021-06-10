@@ -6,10 +6,80 @@ body {
 .container {
     /* border: 1px solid blue; */
     width: 1600px;
-    height:1000px;
-    margin: 100px auto;
+    height: fit-content;
+    margin: 50px auto;
     background-image: url("/images/2.png");
     background-repeat: cover;
+    border: 1px solid transparent;
+}
+
+button {
+    margin-top: -17px;
+    margin-left: 135px;
+    margin-bottom: 47px;
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+    background-color: #33bdef;
+    border-radius: 6px;
+    border: 1px solid #057fd0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 48px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+    background-color: #019ad2;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightskyblue
+}
+
+tbody tr:nth-child(even) {
+    background-color: powderblue;
+}
+
+table {
+    width: 1000px;
+    height: fit-content;
+    background-color: #4733ff;
+    margin: 0 auto;
+    margin-bottom: 110px;
+}
+
+th {
+    font-size: 25px;
+}
+
+td {
+    text-align: center;
+    font-size: 20px;
+}
+
+label {
+    font-size: 40px;
+    margin-left: 120px;
+    color: white;
+}
+
+input {
+    margin-top: 30px;
+    margin-left: 75px;
+    width: 250px;
+    height: 38px;
+    margin-bottom: 46px
 }
 
 
@@ -17,16 +87,13 @@ body {
 
 .index {
     width: 1000px;
-    height: 400px;
+    height: fit-content;
     text-align: center;
-    margin: 200px auto;
-    /* background-image: url("/images/2.jpeg");
-    background-repeat: round; */
-    /* padding-top: 50px */
+    margin: 89px auto;
 }
 
 .index_back {
-    color: palevioletred
+    color: palevioletred;
 }
 
 .index_message {
@@ -34,15 +101,20 @@ body {
     font-size: 50px;
     color: palevioletred;
     text-align: center;
-    padding-top: 20px;
 }
 
 .search_wrap {
-    width: 35%;
+    width: 30%;
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.index_search {
+    margin-left: 11px;
+    margin-right: -122px;
+    width: 250px;
 }
 
 .search {
@@ -71,7 +143,7 @@ body {
     height: 36px;
     border: 1px solid #00B4CC;
     background: #00B4CC;
-    text-align: center;
+    text-align: left;
     color: white;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
@@ -79,7 +151,7 @@ body {
 }
 
 .index_login {
-    margin-top: 154px;
+    margin-top: 47px;
 }
 
 .index_signup {
@@ -124,76 +196,88 @@ body {
 }
 
 
-/* index.erb ends */
-
-
 /* Login Page Starts */
 
-.login_login {
-    color: palevioletred;
-    font-size: 60px;
+.login {
+    color: white;
+    font-size: 55px;
     width: 100px;
     margin: 0px auto;
     padding-top: 57px;
-    margin-bottom: 81px;
-    padding-right: 37px;
+    margin-bottom: 62px;
+    padding-right: 30px;
 }
 
 .login_form {
     width: 400px;
-    height: 480px;
+    height: fit-content;
     margin: 0 auto;
-    border: 1px solid white;
+    border: 1px solid palevioletred;
     padding-top: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 117px;
 }
 
-.login_label {
-    font-size: 40px;
-    margin-left: 120px;
-}
-
-.login_input {
-    margin-top: 30px;
-    margin-left: 75px;
-    width: 250px;
-    height: 38px;
-    margin-bottom: 46px
-}
-
-.login_btn {
-    margin-top: 20px;
-    margin-left: 135px;
-    box-shadow: 0px 1px 0px 0px #f0f7fa;
-    background: linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-    background-color: #33bdef;
-    border-radius: 6px;
-    border: 1px solid #057fd0;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 12px 48px;
+.login_signup {
+    margin-left: 81px;
+    font-size: 20px;
     text-decoration: none;
-    text-shadow: 0px -1px 0px #5b6178;
+    color: white;
 }
 
-.login_btn:hover {
-    background: linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-    background-color: #019ad2;
-}
-
-.login_btn:active {
-    position: relative;
-    top: 1px;
+.login_home {
+    margin-left: 63px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
 }
 
 
-/* Login Page Ends */
+/* Signup Page Starts */
+
+.signup {
+    color: white;
+    font-size: 60px;
+    width: 50px;
+    margin: 0px auto;
+    padding-top: 33px;
+    margin-bottom: 37px;
+    padding-right: 30px;
+}
+
+.signup_form {
+    width: 400px;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid palevioletred;
+    padding-top: 27px;
+    margin-bottom: 80px;
+}
+
+.signup_login {
+    margin-left: 81px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.signup_home {
+    margin-left: 63px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
 
 
 /* game_collection page starts */
+
+.gc_home,
+.gc_com {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+}
 
 .gc_message,
 .gc_p {
@@ -202,44 +286,163 @@ body {
 }
 
 .gc_p {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Shadows Into Light', cursive;
     color: palevioletred;
-   padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .gc_message {
-    font-size: 20px;
+    font-size: 25px;
     color: palevioletred;
 }
 
-
-
-tbody tr:nth-child(odd) {
-    background-color: lightskyblue;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #e495e4;
-}
-
-table {
-    width: 1000px;
-    height: fit-content;
-    background-color: #4733ff;
-    margin: 0 auto;
+.gc_lk {
+    display: inline-block;
+    margin-left: 301px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 700px;
 }
 
 .loggout {
-    padding-top: 37px;
+    padding-top: 30px;
     margin-left: 52px;
 }
 
+.loggout_btn {
+    margin-left: -33px;
+}
+
+.delete {
+    margin-top: 40px;
+    margin-left: 12px;
+    width: 110px;
+    height: 38px;
+    margin-bottom: 46px
+}
 
 
+/* new_game_form page starts */
 
-/* game_collection page ends */
-
-/* label {
+.add_new {
+    text-align: center;
+    padding-top: 58px;
     color: palevioletred;
-} */
+}
+
+.add_form {
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    border: 1px solid palevioletred;
+    padding-top: 38px;
+    margin-bottom: 50px;
+}
+
+.add_lable {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.add_input {
+    margin-top: 8px;
+    margin-left: 75px;
+    width: 250px;
+    height: 38px;
+    margin-bottom: 46px
+}
+
+.btn_submit {
+    margin-top: 20px;
+}
+
+
+/* Edit new game starts */
+
+.edit {
+    text-align: center;
+    padding-top: 58px;
+    color: palevioletred;
+}
+
+.edit_form {
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    border: 1px solid palevioletred;
+    padding-top: 29px;
+    padding-bottom: 60px;
+    margin-bottom: 117px;
+}
+
+.edit_lable {
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+.edit_input {
+    margin-top: -5px;
+    margin-left: 75px;
+    width: 250px;
+    height: 38px;
+    margin-bottom: 46px
+}
+
+.edit_submit {
+    margin-top: 20px;
+}
+
+
+/* Community page starts */
+
+.comm_m {
+    color: palevioletred;
+    font-size: 40px;
+    text-align: center;
+}
+
+.comm_t {
+    margin-top: 30px;
+}
+
+.comm_s {
+    margin-left: 20px;
+}
+
+.comm_h,
+.comm_s {
+    padding-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Search page starts */
+
+.search_t {
+    margin-top: 50px;
+}
+
+.search_d {
+    margin-top: 20px;
+}
+
+.search_h {
+    margin-left: 20px;
+}
+
+.search_h,
+.search_s,
+.search_c {
+    color: white;
+    margin-right: 20px;
+}
+
+.img {
+    width: 350px;
+    height: 300px;
+}

@@ -1,7 +1,9 @@
 
 <form class="loggout" action="/session" method="post">
     <input type="hidden" name=_method value="delete">
-    <button>logout</button>
+    <button class="loggout_btn">logout</button>
+    <a class="gc_home" href="/">Home</a>
+    <a class="gc_com" href="/community">Community Collection</a>
 </form>
 <div class="gc">
 <p class="gc_p">Welcome to your game collection</p>
@@ -12,11 +14,13 @@
 </p>
 </div>
 
-<p class="gc_lk"><a href="/games/new" >Add Game +</a></p>
+<a class="gc_lk" href="/games/new" >Add Game +</a>
 
 <table>
     <thead>
+    
      <tr>
+     
       <th scope="col">ID</th>
       <th scope="col">Title</th>
       <th scope="col">Year</th>
@@ -41,7 +45,7 @@
       <td>
         <form action="/games/<%= game["id"] %>" method="post">
             <input type="hidden" name="_method" value="DELETE">
-            <input type="submit" value="delete">
+            <input class="delete" type="submit" value="delete">
         </form>
       </td>
     </tr>

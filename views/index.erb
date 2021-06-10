@@ -11,22 +11,18 @@
   
  
 
-    <div class="search_wrap">
-      <form class="search" action="/search" method="get">
-      <input type="text" class="searchTerm" placeholder="Search for your game...">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
-      </form>
-    </div>
+<form  role="search" method="get" action="search">
+  <input class="index_search" type="search" id="search" name="search"
+   placeholder="Find Your Game..."
+   aria-label="Search through site content">
+  <button >Search</button>
+</form>
+    
     
      <div>
     <a class="index_login" href="/login">Login</a>
     <a class="index_signup" href="/signup">Signup</a>
-
- 
     <a class="index_personal" href="/session">Personal Collection</a>
-
     <a class="index_community" href="/community">Community Collection</a>
   </div>
 </div>

@@ -1,31 +1,29 @@
-<h1>Add a new game</h1>
+<h1 class="add_new">Add A New Game</h1>
 
-<form action="/games" method=post>
-    <label for="title">Title:</label><br><br>
-    <input type="text" name="title" id="title"><br><br>
-    <label for="year">Year:</label><br><br>
-    <input type="text" name="year" id="year"><br><br>
+<form class="add_form" action="/games" method=post>
+    <label class="add_lable" for="title">Title:</label>
+    <input class="add_input" type="text" name="title" id="title">
+    <label class="add_lable" for="year">Year:</label>
+    <input class="add_input" type="text" name="year" id="year">
 
-    <label for="description">Description:</label><br><br>
-    <textarea name="description" id="description" cols="30" rows="4"></textarea><br><br>
+    <label class="add_lable" for="description">Notes:</label>
+    <textarea class="add_input" name="description" id="description" cols="30" rows="4"></textarea>
 
     
-
-
-
-    <label for="rating">Rating:</label><br><br>
-    <input type="text" name="rating" id="rating"><br><br>
+    <label class="add_lable" for="rating">Rating:</label>
+    <input class="add_input" type="text" name="rating" id="rating">
     
-    <label for="category">Category</label><br><br>
-    <select name="category" id="category"><br><br>
+    <label class="add_lable" for="category">Category</label>
+    <select class="add_input" name="category" id="category">
         <option value="pocket list">Pocket List</option>
         <option value="playing">Playing</option>
         <option value="beaten">Beaten</option>
         <option value="completed">Completed</option>
+        <option value="youtube">Watching on Youtube</option>
         <option value="Trade-off">Trade-off</option>
-    </select><br><br>
+    </select><
 
-    <button>Submit</button>
+    <button class="btn_submit">Submit</button>
 
 </form>
 

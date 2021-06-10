@@ -1,18 +1,17 @@
 
-<p class="login_login">Login</p>
+<p class="login">Login</p>
 
+<div class="login_form">
+<form  action="/login" method="post">
+    <label  for="">user_name</label>
+    <input  type="user_name" name="user_name">
 
-<form class="login_form" action="/login" method="post">
-    <label class="login_label" for="">user_name</label>
-    <input class="login_input" type="user_name" name="user_name">
+    <label  for="">password</label>
+    <input type="password" name="password"><br><br>
 
-    <label class="login_label" for="">password</label>
-    <input class="login_input"type="password" name="password"><br><br>
-
-    <button class="login_btn">login</button>
+    <button>login</button>
 </form>
-</div>
-<div>
-<a href="/signup">Signup Instead</a>
-<a href="/">Home</a>
+
+<a class="login_signup" href="/signup">Signup Instead</a>
+<a class="login_home" href="/">Home</a>
 </div>

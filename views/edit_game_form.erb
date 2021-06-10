@@ -1,27 +1,28 @@
-<h2>edit a new game list</h2>
-<form action="/games/<%= game['id'] %>" method="post">
-    <input type="hidden" name="_method" value="put">
-    <label for="title">Title:</label><br><br>
-    <input type="text" name="title" id="title" value="<%= game["title"]%>"><br><br>
-    <label for="year">Year:</label><br><br>
-    <input type="text" name="year" id="year" value="<%= game["year"]%>"><br><br>
+<h2 class="edit">Edit A New Game List</h2>
+<form class="edit_form" action="/games/<%= game['id'] %>" method="post">
+    <input class="edit_input" type="hidden" name="_method" value="put">
+    <label class="edit_lable" for="title">Title:</label><br><br>
+    <input class="edit_input"  type="text" name="title" id="title" value="<%= game["title"]%>"><br><br>
+    <label class="edit_lable" for="year">Year:</label><br><br>
+    <input class="edit_input"  type="text" name="year" id="year" value="<%= game["year"]%>"><br><br>
 
-    <label for="description">Description:</label><br><br>
-    <textarea name="description" id="description" cols="30" rows="4"><%= game["description"]%></textarea><br><br>
+    <label class="edit_lable"  for="description">Notes:</label><br><br>
+    <textarea class="edit_input"  name="description" id="description" cols="30" rows="4"><%= game["description"]%></textarea><br><br>
 
-    <label for="rating">Rating:</label><br><br>
-    <input type="text" name="rating" id="rating" value="<%= game["rating"]%>"><br><br>
+    <label class="edit_lable" for="rating">Rating(1-5) :</label><br><br>
+    <input class="edit_input" type="text" name="rating" id="rating" value="<%= game["rating"]%>"><br><br>
     
-    <label for="category">Category</label><br><br>
-    <select name="category" id="category"><br><br>
+    <label class="edit_lable" for="category">Category</label><br><br>
+    <select class="edit_input"name="category" id="category"><br><br>
         <option value="Pocket List">Pocket List</option>
+        <option value="youtube">Watching on Youtube</option>
         <option value="Playing">Playing</option>
         <option value="Beaten">Beaten</option>
         <option value="Completed">Completed</option>
         <option value="Trade-off">Trade-off</option>
     </select><br><br>
 
-    <button>update</button>
+    <button>Update</button>
 
 </form>
 
