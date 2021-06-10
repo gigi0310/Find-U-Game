@@ -2,7 +2,7 @@
 
 https://gigi0310.github.io/Find-U-Game/
 
-url("/wireframe.jpg")
+
 
 ## App Introduction
 
@@ -20,6 +20,7 @@ url("/wireframe.jpg")
 ## The Appraches Taken:
 
 - Draw a wireframe
+url("/wireframe.jpg")
 - Draw a wireframe, think a route for each page.
 - Write prints message in each section to check is the request got response.
 - Read the error report, find the error based on the error message.
