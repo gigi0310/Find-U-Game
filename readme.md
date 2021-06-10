@@ -1,5 +1,9 @@
 # Find-U-Game
 
+https://gigi0310.github.io/Find-U-Game/
+
+url("/wireframe.jpg")
+
 ## App Introduction
 
 - This web app allows users to track their video game collection. 

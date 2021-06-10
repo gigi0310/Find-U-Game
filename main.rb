@@ -1,21 +1,18 @@
 require 'sinatra'
-require 'sinatra/reloader'
-# require 'sinatra/flash'
-require 'pry'
+require 'sinatra/reloader' if development? 
+require 'pry' if development?
 require 'bcrypt'
 require 'pg'
 require 'httparty'
-# require_relative 'db/helpers.rb'
-set :port, 4568
+require_relative 'db/helpers.rb'
 
 
-
-def run_sql(sql, params =[])
-  db = PG.connect(dbname: 'gametracker')
-  res = db.exec_params(sql, params)
-  db.close
-  return res
-end
+# def run_sql(sql, params =[])
+#   db = PG.connect(dbname: 'gametracker')
+#   res = db.exec_params(sql, params)
+#   db.close
+#   return res
+# end
 
 enable :sessions
 
@@ -140,7 +137,8 @@ get '/games/:id' do
 
   id = params["id"]
 
-  db = PG.connect(dbname: 'gametracker')
+  db = PG.connect(ENV['DATABASE_URL'] || {dbname: 'gametracker'})
+  # db = PG.connect(dbname: 'gametracker')
   puts params["id"]
   res = db.exec("SELECT * FROM games WHERE id = #{id};")
   db.close
