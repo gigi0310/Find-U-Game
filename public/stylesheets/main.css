@@ -327,6 +327,23 @@ input {
 
 /* new_game_form page starts */
 
+.ng {
+    margin-top: 20px;
+}
+
+.ng_h {
+    margin-left: 20px;
+}
+
+.ng_h,
+.ng_s {
+    padding-top: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
 .add_new {
     text-align: center;
     padding-top: 58px;
@@ -397,6 +414,10 @@ input {
 
 
 /* Community page starts */
+
+.comm {
+    margin-top: 20px;
+}
 
 .comm_m {
     color: palevioletred;

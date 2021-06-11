@@ -1,25 +1,23 @@
-
+<form class="loggout" action="/session" method="post">
+    <input type="hidden" name=_method value="delete">
+    <button class="loggout_btn">logout</button>
+</form>
 <div class="index">
   <p class="index_back">
   <% if logged_in? %>
    Hi, <%= current_user()['user_name'] %> 😊
   <% end %> 
   </p>
-
-
   <p class="index_message">Welcome to Game Tracker </p>
   
- 
-
-<form  role="search" method="get" action="search">
-  <input class="index_search" type="search" id="search" name="search"
+  <form  role="search" method="get" action="search">
+    <input class="index_search" type="search" id="search" name="search"
    placeholder="Find Your Game..."
    aria-label="Search through site content">
-  <button >Search</button>
-</form>
-    
-    
-     <div>
+    <button >Search</button>
+  </form>
+  
+    <div>
     <a class="index_login" href="/login">Login</a>
     <a class="index_signup" href="/signup">Signup</a>
     <a class="index_personal" href="/session">Personal Collection</a>
