@@ -1,8 +1,5 @@
 # Find-U-Game
-
-https://gigi0310.github.io/Find-U-Game/
-
-
+[link](https://powerful-fortress-90037.herokuapp.com/)
 
 ## App Introduction
 
@@ -20,7 +17,7 @@ https://gigi0310.github.io/Find-U-Game/
 ## The Appraches Taken:
 
 - Draw a wireframe
-url("/wireframe.jpg")
+![picture](wireframe.jpg)
 - Draw a wireframe, think a route for each page.
 - Write prints message in each section to check is the request got response.
 - Read the error report, find the error based on the error message.
